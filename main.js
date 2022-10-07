@@ -1,3 +1,5 @@
+// lucasssssssssssss
+
 window.addEventListener('scroll', onScroll)
 
 onScroll()
