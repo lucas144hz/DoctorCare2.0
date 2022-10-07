@@ -1,4 +1,3 @@
-// lucasssssssssssss
 
 window.addEventListener('scroll', onScroll)
 
