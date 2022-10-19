@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,6 +19,7 @@
 </head>
 
 <body>
+
   <nav id="navigatio" class="">
     <div class="wrapper">
       <a class="logo" href="#home"><svg width="133" height="18" viewBox="0 0 133 18" fill="none"
@@ -56,6 +62,7 @@
           <li><a onclick="closeMenu()" href="#home">Início</a></li>
           <li><a onclick="closeMenu()" href="#services">Seviços</a></li>
           <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+          <li><a onclick="closeMenu()" href="#testimonials">Depoimentos</a></li>
         </ul>
 
         <a class="button" onclick="closeMenu()" href="#contact">Agende sua consulta</a>
@@ -281,6 +288,228 @@
     </div>
   </section>
 
+
+  <div class="divider-1"></div>
+  <section class="section" id="testimonials">
+    <div class="wrapper">
+      <header>
+        <h4>Depoimentos</h4>
+        <h2>O que os clientes dizem sobre o DoctorCare</h2>
+      </header>
+
+      <div class="swiper mySwiper testimonials">
+        <div class="swiper-wrapper  content">
+
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_4.png" alt="" />
+                Louise
+              </cite>
+            </blockquote>
+
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_10.png" alt="" />
+                Giovanni
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/atriz_lily.png" alt="" />
+                Heloísa
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_6.png" alt="" />
+                Thiago
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_11.png" alt="" />
+                Breno
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/joe_king.png" alt="" />
+                Bianca
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_5.png" alt="" />
+                Simone
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="swiper-slide testimonial">
+            <blockquote>
+              <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5263 11.7111C17.5263 14.237 16.9539 16.5525 15.8092 18.6574C14.7039 20.7241 13.3618 22.5228 11.7829 24.0537C10.2039 25.6228 8.4671 27.0389 6.57237 28.3019C4.67763 29.5265 3.15789 30.4259 2.01316 31L0 27.613C1.61842 26.6944 3.15789 25.7568 4.61842 24.8C6.11842 23.8049 7.26316 22.8673 8.05263 21.987C9.11842 20.8389 9.9671 19.6525 10.5987 18.4278C11.2303 17.1648 11.625 15.5191 11.7829 13.4907H8.94079C6.45395 13.4907 4.51974 12.8784 3.13816 11.6537C1.75658 10.429 1.06579 8.72593 1.06579 6.54444C1.06579 4.97531 1.69737 3.50185 2.96053 2.12407C4.22368 0.708025 5.94079 0 8.11184 0C11.4671 0 13.875 1.09074 15.3355 3.27222C16.7961 5.41543 17.5263 8.2284 17.5263 11.7111Z"
+                  fill="#5F3DC4" />
+                <path
+                  d="M45 11.7111C45 14.237 44.4276 16.5525 43.2829 18.6574C42.1776 20.7241 40.8355 22.5228 39.2566 24.0537C37.6776 25.6228 35.9408 27.0389 34.0461 28.3019C32.1513 29.5265 30.6316 30.4259 29.4868 31L27.4737 27.613C29.0921 26.6944 30.6316 25.7568 32.0921 24.8C33.5921 23.8049 34.7368 22.8673 35.5263 21.987C36.5921 20.8389 37.4408 19.6525 38.0724 18.4278C38.7039 17.1648 39.0987 15.5191 39.2566 13.4907H36.4145C33.9276 13.4907 31.9934 12.8784 30.6118 11.6537C29.2303 10.429 28.5395 8.72593 28.5395 6.54444C28.5395 4.97531 29.1711 3.50185 30.4342 2.12407C31.6974 0.708025 33.4145 0 35.5855 0C38.9408 0 41.3487 1.09074 42.8092 3.27222C44.2697 5.41543 45 8.2284 45 11.7111Z"
+                  fill="#5F3DC4" />
+              </svg>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Architecto dolorem eveniet, veritatis
+                blanditiis enim nostrum error cupiditate fuga pariatur
+                corrupti distinctio eligendi sed omnis alias officia odit ad
+                natus! Esse?
+              </p>
+              <cite>
+                <img src="./assets/img_7.png" alt="" />
+                Jessica
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <div class="divider-2"></div>
+
+
   <section id="contact">
     <div class="wrapper">
       <div class="col-a">
@@ -328,7 +557,10 @@
         <img src="./assets/homen olhando o celular.png" alt="homem olhando o celular">
       </div>
     </div>
+    </div>
   </section>
+
+
 
   <footer>
     <div class="wrapper">
@@ -418,17 +650,62 @@
     </div>
   </footer>
 
-  <a id="backToTopButton" href="#home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="20" r="20" fill="#00856F" />
-      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </a>
+  <div class="buttontop">
+    <a id="backToTopButton" href="#home"><svg width="50" height="50" viewBox="0 0 40 40" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+
 
   <script src="https://unpkg.com/scrollreveal"></script>
 
+
   <script src="./main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      direction: "horizontal",
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50,
+      centerSlide: true,
+      fade: true,
+      loop: true,
+      mousewheel: true,
+      keyboard: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+
+        520: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+
+        950: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+      },
+    })
+  </script>
+
 </body>
 
 </html>
